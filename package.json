@@ -1,0 +1,39 @@
+{
+  "name"            : "cannolo",
+  "version"         : "0.0.1",
+  "description"     : "API documentation generator with a strict grammar and testing tools",
+  "keywords"        : [
+                        "api", "doc", "apidoc", "documentation", "pdoc", "ndoc"
+                      ],
+  "homepage"        : "https://github.com/gjtorikian/cannolo",
+
+  "author"          : "Garen J. Torikian <gjtorikian@gmail.com>",
+  "contributors"   : [
+                        "Vitaly Puzrin <vitaly@rcdesign.ru> (http://rcdesign.ru)",
+                        "Aleksey V Zapparov <ixti@member.fsf.org> (http://www.ixti.net/)"
+                      ],
+
+  "bugs"            : { "url": "https://github.com/gjtorikian/cannolo/issues" },
+  "license"         : { "type": "MIT", "url": "https://github.com/gjtorikian/cannolo/blob/master/LICENSE" },
+  "repository"      : { "type": "git", "url": "git://github.com/gjtorikian/cannolo.git" },
+
+  "main"            : "./lib/cannolo.js",
+  "bin"             : { "cannolo": "./bin/cannolo" },
+  "dependencies"    : {
+                        "async"       : "0.2.9",
+                        "argparse"    : "0.1.10",
+                        "jade"        : "0.30.0",
+                        "marked"      : "0.2.9",
+                        "underscore"  : "1.4.4",
+                        "fs-tools"    : "0.2.10",
+                        "wrench"      : "1.5.1",
+                        "functional-docs": "0.1.18",
+                        "mocha": "1.10.0",
+                        "markdown_conrefs": "1.2.18"
+                      },
+  "devDependencies" : { "jison": "~0.3.0" },
+
+  "engines"         : { "node": ">= 0.10.0" },
+
+  "preferGlobal"    : true
+}
