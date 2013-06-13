@@ -5,8 +5,8 @@ var path = require("path");
 var options = {
   title       : "TEST",
   output      : "./test_out",
-  additionalObjs : "./additionalObjs.json",
-  parseOptions: "./parse_options.json"
+  parseOptions: "./parse_options.json",
+  skin: "../skins/goose/templates/layout.jade",
 };
 
 cannolo.parse(["0.8.14/nodejs_ref_guide"], options, function (err, ast) {

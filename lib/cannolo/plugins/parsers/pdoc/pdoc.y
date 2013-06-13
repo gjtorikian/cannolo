@@ -112,7 +112,7 @@ world
 
   : /* empty */ { $$ = {} }
 
-  | world '/**' tags cannolo_and_includes_and_fires comment '**/' %{
+  | world '/**' tags panino_and_includes_and_fires comment '**/' %{
     var x = $4;
     for (var i in $3) x[i] = $3[i];
     // amend description
@@ -206,10 +206,10 @@ stability_list
   | '5 - Locked'
   ;
 
-cannolo_and_includes_and_fires
+panino_and_includes_and_fires
 
-  : cannolo
-  | cannolo INCLUDES names { $$.included_mixins = $3 }
+  : panino
+  | panino INCLUDES names { $$.included_mixins = $3 }
   ;
 
 
@@ -219,7 +219,7 @@ comment
   ;
 
 
-cannolo
+panino
 
   : section
   | namespace

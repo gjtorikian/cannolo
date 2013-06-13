@@ -1,7 +1,7 @@
 {
   "name"            : "cannolo",
   "version"         : "0.0.1",
-  "description"     : "API documentation generator with a strict grammar and testing tools",
+  "description"     : "API documentation generator (via Markdown) with a strict grammar and testing tools",
   "keywords"        : [
                         "api", "doc", "apidoc", "documentation", "pdoc", "ndoc"
                       ],
@@ -25,13 +25,15 @@
                         "jade"        : "0.30.0",
                         "marked"      : "0.2.9",
                         "underscore"  : "1.4.4",
+                        "minimatch"   : "0.2.9",
                         "fs-tools"    : "0.2.10",
                         "wrench"      : "1.5.1",
                         "functional-docs": "0.1.18",
-                        "mocha": "1.10.0",
-                        "markdown_conrefs": "1.2.18"
+                        "markdown_conrefs": "1.2.18",
+                        "render-html-from-ast": "0.0.1",
+                        "colors": "0.6.0"
                       },
-  "devDependencies" : { "jison": "~0.3.0" },
+  "devDependencies" : { "jison": "~0.3.0", "mocha": "1.10.0" },
 
   "engines"         : { "node": ">= 0.10.0" },
 
